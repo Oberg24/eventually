@@ -19,7 +19,10 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+		"../node_modules/normalize.css/normalize.css",
+        "styles.css",
+		"assets/SEB_UI_Toolkit.css",
+		"assets/main.min.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
