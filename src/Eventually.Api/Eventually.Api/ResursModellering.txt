@@ -1,0 +1,45 @@
+Model
+
+Event
+	-Id
+	-Description
+	-Tags
+	-StartTime
+	-EndTime
+	-Location
+	-CreationDate
+	-CreatorId
+	
+EventRate
+	-Id
+	-EventId
+	-Rate
+	
+User
+	-Id
+	-UserName
+	-Pwd
+
+EventParticipant
+	-Id
+	-EventId
+	-UserId
+	
+Tag
+	-Id
+	-Name
+	
+API-design
+api/token			
+	grant_type
+	username
+	password
+	scopes
+
+api/events						-get all events
+api/events/{id}					-get event (POST, PUT, DELETE, PATCH)
+api/events/Tags/{id,id,id...}	-get all events by tag.
+
+
+
+
