@@ -1,6 +1,7 @@
 ﻿using Eventually.Api.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,15 @@ namespace Eventually.Api.Contollers {
 		public async Task<IActionResult> Get() {
 			
 			using(var context = new Models.EventuallyContext()) {
-				return Ok(context.Events.ToList());
+                var events = context.Events
+                    .Include(x => x.EventParticipants)
+                    .ThenInclude(x => x.User)
+                    .Include(x => x.EventTags)
+                    .ThenInclude(x => x.Tag)
+                    .Include(x => x.Creator)
+                    .ToList();
+
+                return Ok(events);
 			}
 		}
 
