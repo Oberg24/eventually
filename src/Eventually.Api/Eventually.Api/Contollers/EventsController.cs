@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Eventually.Api.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -20,25 +21,13 @@ namespace Eventually.Api.Contollers {
 		[Route("tags/{ids}")]
 		public async Task<IActionResult> GetByTags(string ids) {
 
-			var test = ids.Split(',').ToList();
+			var tagIdList = ids.Split(',').ToList();
 			
 			using (var context = new Models.EventuallyContext()) {
-
-				var eventTags = new List<Models.EventTag>();
-
-				foreach (var item in test) {
-					eventTags.AddRange(context.EventTags.Where(x => x.Tag.Id == int.Parse(item)));
-				}
-				
-				var events = context.Events.ToList();
-
-				var toReturn = new List<Models.Event>();
-					
-				//foreach (var _event in events) {
-				//	toReturn.Add(_event.EventTags)
-				//}
-
-				return Ok(toReturn.ToList());
+                
+                var eventTags = context.EventTags.Where(x => tagIdList.Contains(x.Tag.Id.ToString()));
+                var events = eventTags.Select(x => x.Event).Distinct();
+                return Ok(events.ToList());
 			}
 		}
 
