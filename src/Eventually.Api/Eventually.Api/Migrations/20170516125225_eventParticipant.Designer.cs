@@ -8,9 +8,10 @@ using Eventually.Api.Models;
 namespace Eventually.Api.Migrations
 {
     [DbContext(typeof(EventuallyContext))]
-    partial class EventuallyContextModelSnapshot : ModelSnapshot
+    [Migration("20170516125225_eventParticipant")]
+    partial class eventParticipant
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")

@@ -15,6 +15,6 @@ namespace Eventually.Api.Models {
 		public DbSet<Rating> Ratings { get; set; }
 		public DbSet<Tag> Tags { get; set; }
 		public DbSet<User> Users { get; set; }
-
-	}
+        public DbSet<EventParticipant> EventParticipants { get; set; }
+    }
 }
