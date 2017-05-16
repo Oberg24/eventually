@@ -13,8 +13,8 @@ namespace Eventually.Api.Models
         public DateTime EndTime { get; set; }
         public DateTime CreationDate { get; set; }
 
-        public IEnumerable<Tag> Tags { get; set; }
-        public IEnumerable<EventParticipant> Participants { get; set; }
+        public IEnumerable<EventTag> EventTags { get; set; }
+        public IEnumerable<EventParticipant> EventParticipants { get; set; }
         public User Creator { get; set; }
     }
 }
