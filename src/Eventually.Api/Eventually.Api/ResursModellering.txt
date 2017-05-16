@@ -36,10 +36,9 @@ api/token
 	password
 	scopes
 
-api/events						-get all events
+api/events						-get all events (GET)
 api/events/{id}					-get event (POST, PUT, DELETE, PATCH)
-api/events/Tags/{id,id,id...}	-get all events by tag.
+api/events/Tags/{id,id,id...}	-get all events by tag. (GET)
 
-
-
-
+api/tags						-get all events (POST)
+api/tags/{id}					-get event (PUT, DELETE, PATCH)

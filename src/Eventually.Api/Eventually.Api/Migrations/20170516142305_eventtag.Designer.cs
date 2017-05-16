@@ -8,9 +8,10 @@ using Eventually.Api.Models;
 namespace Eventually.Api.Migrations
 {
     [DbContext(typeof(EventuallyContext))]
-    partial class EventuallyContextModelSnapshot : ModelSnapshot
+    [Migration("20170516142305_eventtag")]
+    partial class eventtag
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")
@@ -71,7 +72,7 @@ namespace Eventually.Api.Migrations
 
                     b.HasIndex("TagId");
 
-                    b.ToTable("EventTags");
+                    b.ToTable("EventTag");
                 });
 
             modelBuilder.Entity("Eventually.Api.Models.Rating", b =>
