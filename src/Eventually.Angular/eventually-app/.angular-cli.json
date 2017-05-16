@@ -19,6 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+		"assets/css/SEB_UI_Toolkit.css",
         "styles.css"
       ],
       "scripts": [],
