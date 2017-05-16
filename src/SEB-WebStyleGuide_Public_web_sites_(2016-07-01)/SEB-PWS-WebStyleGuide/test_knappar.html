@@ -1,0 +1,1379 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SEB-PWS Visual Style Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">  
+
+  <link rel="stylesheet" href="css/SEB_UI_Toolkit.css">
+  <!--<link rel="stylesheet" href="css/SEBResponsive_old.css">-->
+  <link rel="stylesheet" href="css/wsg.css">
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <script src="vendors/jquery-1.10.2.min.js"></script>
+  <script src="vendors/bootstrap/js/bootstrap.js"></script>
+  <script src="js/wsg.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar-right" data-offset="150">
+  <div id="page-container" class="wrap-content">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <section id="wsg-overview">            
+            <h1>SEB-PWS Web Style Guide</h1>
+          </section>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span9">
+          <section id="wsg-typography">
+            <h1>Typography</h1>
+            <article id="wsg-headings">
+              <h3 class="heading">Headings</h3>
+              <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are available and uses SEBBasicBold fonts</p>
+              <div class="wsg-example">
+                <h1>h1. Heading 1 (font-size: 30px, line-height: 40px)</h1>
+                <h2>h2. Heading 2 (font-size: 26px, line-height: 31px)</h2>
+                <h3>h3. Heading 3 (font-size: 24px, line-height: 28px)</h3>
+                <h4>h4. Heading 4 (font-size: 22px, line-height: 24px)</h4>
+                <h5>h4. Heading 5 (font-size: 20px, line-height: 20px)</h5>
+                <h6>h6. Heading 6 (font-size: 18px, line-height: 20px)</h6>
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  &lt;h1&gt;Heading&lt;/h1&gt;
+                </span>
+              </pre>
+            </article>
+            <article id="wsg-body-copy">
+              <h3 class="heading">Body copy</h3>
+              <p>
+                SEB PWS sites global default <code>font-size</code> is <strong>16px</strong>, with a <code>line-height</code> of <strong>1.4 unitless</strong> (40%) more than the font-size (22.4px). 
+                This is applied to the <code>&lt;body&gt;</code>.
+              </p>
+              <div class="wsg-example">
+                Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+
+                Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  &lt;p&gt;...&lt;/p&gt;
+                </span>
+              </pre>
+            </article>
+            <article id="wsg-anfang">
+              <h3 class="heading">Anfang</h3>
+              <p>This example shows the anfang when renderd in a 
+                intro block. There is three sizes. 
+                Two rows, three rows and four rows. 
+                Add the class <code>.anfang-two-rows-intro, .anfang-three-rows-intro or .anfang-four-rows-intro</code> 
+                on the wrapped character. If you want the anfang i outside the intro block, just change the last word of the class name. <code>anfang-four-rows-<strong>intro</strong></code> to
+                  <code>anfang-four-rows-<strong>body</strong></code></p>
+              <div class="wsg-example">
+                  <div class="intro">
+                      <p>
+                          <span class="anfang-two-rows-intro">D</span>onec rutrum congue leo eget malesuada.
+                          Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.
+                          Donec rutrum congue leo eget malesuada. Donec rutrum congue leo eget malesuada.
+                          Curabitur aliquet quam id dui posuere blandit.
+                          Donec rutrum congue leo eget malesuada. Donec rutrum congue leo eget malesuada.
+                      </p><br />
+                      <p>
+                          <span class="anfang-three-rows-intro">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                          Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                          Vivamus suscipit tortor eget felis porttitor volutpat.
+                          Vivamus suscipit tortor eget felis porttitor volutpat.
+                          Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                          Vivamus suscipit tortor eget felis porttitor volutpat.
+                      </p><br />
+                      <p>
+                          <span class="anfang-four-rows-intro">E</span>estibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                          Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec sollicitudin molestie malesuada.
+                          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem
+                          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                          Donec sollicitudin molestie malesuada.
+                          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem
+                          Donec sollicitudin molestie malesuada.
+                      </p><br />
+                    </div>
+                  </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                    <br />
+                    &lt;p&gt;<br />
+                    &nbsp;&lt;span class="anfang-four-rows-intro"&gt;E&lt;/span&gt;<br />
+                    &nbsp;estibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.<br />
+                    &nbsp;Donec velit neque, auctor sit amet aliquam vel, ullamcorper<br />
+                    &nbsp;sit amet ligula. Donec sollicitudin molestie malesuada.<br />
+                    &nbsp;Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+                    &nbsp;Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem<br />
+                    &nbsp;Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+                    &nbsp;Donec sollicitudin molestie malesuada.<br />
+                    &nbsp;Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.<br />
+                    &nbsp;Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem<br />
+                    &nbsp;Donec sollicitudin molestie malesuada.<br />
+                    &lt;/p&gt;<br />
+                </span>
+              </pre>
+            </article>                                                
+            <article id="wsg-icons">
+              <h3 class="heading">Icons</h3>
+              <div class="row">
+                <div class="span3"><i class="icon-lock"></i>icon-lock<span class="muted">(&amp;#f000;)</span></div>
+                <div class="span3"><i class="icon-customize"></i>icon-customize<span class="muted">(&amp;#f001;)</span></div>
+                <div class="span3"><i class="icon-settings"></i>icon-settings<span class="muted">(&amp;#f002;)</span></div>
+                <div class="span3"><i class="icon-print"></i>icon-print<span class="muted">(&amp;#f003;)</span></div>
+                <div class="span3"><i class="icon-calendar"></i>icon-calendar<span class="muted">(&amp;#f004;)</span></div>
+                <div class="span3"><i class="icon-telephone"></i>icon-telephone<span class="muted">(&amp;#f005;)</span></div>
+                <div class="span3"><i class="icon-smartphone"></i>icon-smartphone<span class="muted">(&amp;#f006;)</span></div>
+                <div class="span3"><i class="icon-tablet"></i>icon-tablet<span class="muted">(&amp;#f007;)</span></div>
+                <div class="span3"><i class="icon-desktop"></i>icon-desktop<span class="muted">(&amp;#f008;)</span></div>
+                <div class="span3"><i class="icon-email"></i>icon-email<span class="muted">(&amp;#f009;)</span></div>
+                <div class="span3"><i class="icon-share"></i>icon-share<span class="muted">(&amp;#f00a;)</span></div>
+                
+                <div class="span3"><i class="icon-contact"></i>icon-contact<span class="muted">(&amp;#f00b;)</span></div>
+                <div class="span3"><i class="icon-address-book"></i>icon-address-book<span class="muted">(&amp;#f00c;)</span></div>
+                <div class="span3"><i class="icon-comments"></i>icon-comments<span class="muted">(&amp;#f00d;)</span></div>
+                <div class="span3"><i class="icon-link"></i>icon-link<span class="muted">(&amp;#f00e;)</span></div>
+                <div class="span3"><i class="icon-card"></i>icon-card<span class="muted">(&amp;#f00f;)</span></div>
+                <div class="span3"><i class="icon-legal"></i>icon-legal<span class="muted">(&amp;#f010;)</span></div>
+                <div class="span3"><i class="icon-publication"></i>icon-publication<span class="muted">(&amp;#f011;)</span></div>
+                <div class="span3"><i class="icon-press"></i>icon-press<span class="muted">(&amp;#f012;)</span></div>
+                <div class="span3"><i class="icon-career"></i>icon-career<span class="muted">(&amp;#f013;)</span></div>
+                <div class="span3"><i class="icon-self-service"></i>icon-self-service<span class="muted">(&amp;#f014;)</span></div>
+                <div class="span3"><i class="icon-arrow-right"></i>icon-arrow-right<span class="muted">(&amp;#f015;)</span></div>
+                
+                <div class="span3"><i class="icon-question"></i>icon-question<span class="muted">(&amp;#f016;)</span></div>
+                <div class="span3"><i class="icon-exclamation"></i>icon-exclamation<span class="muted">(&amp;#f017;)</span></div>
+                <div class="span3"><i class="icon-information"></i>icon-information<span class="muted">(&amp;#f018;)</span></div>
+                <div class="span3"><i class="icon-new-window"></i>icon-new-window<span class="muted">(&amp;#f019;)</span></div>
+                <div class="span3"><i class="icon-check"></i>icon-check<span class="muted">(&amp;#f01a;)</span></div>
+                <div class="span3"><i class="icon-close"></i>icon-close<span class="muted">(&amp;#f01b;)</span></div>
+                <div class="span3"><i class="icon-triangle-right"></i>icon-triangle-right<span class="muted">(&amp;#f01c;)</span></div>
+                <div class="span3"><i class="icon-triangle-down"></i>icon-triangle-down<span class="muted">(&amp;#f01d;)</span></div>
+                <div class="span3"><i class="icon-triangle-left"></i>icon-triangle-left<span class="muted">(&amp;#f01e;)</span></div>
+                <div class="span3"><i class="icon-arrow-up"></i>icon-arrow-up<span class="muted">(&amp;#f01f;)</span></div>
+                <div class="span3"><i class="icon-arrow-down"></i>icon-arrow-down<span class="muted">(&amp;#f020;)</span></div>
+                
+                <div class="span3"><i class="icon-facebock"></i>icon-facebook<span class="muted">(&amp;#f021;)</span></div>
+                <div class="span3"><i class="icon-twitter"></i>icon-twitter<span class="muted">(&amp;#f022;)</span></div>
+                <div class="span3"><i class="icon-linkedin"></i>icon-linkedin<span class="muted">(&amp;#f023;)</span></div>
+                <div class="span3"><i class="icon-google-plus"></i>icon-google-plus<span class="muted">(&amp;#f024;)</span></div>
+                <div class="span3"><i class="icon-skype"></i>icon-skype<span class="muted">(&amp;#f025;)</span></div>
+                <div class="span3"><i class="icon-headset"></i>icon-headset<span class="muted">(&amp;#f026;)</span></div>
+                <div class="span3"><i class="icon-arrow-double"></i>icon-arrow-double<span class="muted">(&amp;#f027;)</span></div>
+                <div class="span3"><i class="icon-arrow-down-small"></i>icon-arrow-down-small<span class="muted">(&amp;#f028;)</span></div>
+                <div class="span3"><i class="icon-arrow-up-small"></i>icon-arrow-up-small<span class="muted">(&amp;#f029;)</span></div>
+                <div class="span3"><i class="icon-import"></i>icon-import<span class="muted">(&amp;#f02a;)</span></div>
+                <div class="span3"><i class="icon-export"></i>icon-export<span class="muted">(&amp;#f02b;)</span></div>
+                
+                <div class="span3"><i class="icon-refresh"></i>icon-refresh<span class="muted">(&amp;#f02c;)</span></div>
+                <div class="span3"><i class="icon-start"></i>icon-start<span class="muted">(&amp;#f02d;)</span></div>
+                <div class="span3"><i class="icon-heart"></i>icon-heart<span class="muted">(&amp;#f02e;)</span></div>
+                <div class="span3"><i class="icon-plus"></i>icon-plus<span class="muted">(&amp;#f02f;)</span></div>
+                <div class="span3"><i class="icon-minus"></i>icon-minus<span class="muted">(&amp;#f030;)</span></div>
+                <div class="span3"><i class="icon-commenting"></i>icon-commenting<span class="muted">(&amp;#f031;)</span></div>
+                <div class="span3"><i class="icon-menu"></i>icon-menu<span class="muted">(&amp;#f032;)</span></div>
+                <div class="span3"><i class="icon-drag"></i>icon-drag<span class="muted">(&amp;#f033;)</span></div>
+                <div class="span3"><i class="icon-warning"></i>icon-warning<span class="muted">(&amp;#f034;)</span></div>
+                <div class="span3"><i class="icon-document"></i>icon-document<span class="muted">(&amp;#f035;)</span></div>
+                <div class="span3"><i class="icon-calculator"></i>icon-calculator<span class="muted">(&amp;#f036;)</span></div>
+                
+                <div class="span3"><i class="icon-home"></i>icon-home<span class="muted">(&amp;#f037;)</span></div>
+                <div class="span3"><i class="icon-address-card"></i>icon-address-card<span class="muted">(&amp;#f038;)</span></div>
+                <div class="span3"><i class="icon-footsteps"></i>icon-footsteps<span class="muted">(&amp;#f039;)</span></div>
+                <div class="span3"><i class="icon-coffee"></i>icon-coffee<span class="muted">(&amp;#f03a;)</span></div>
+                <div class="span3"><i class="icon-clock"></i>icon-clock<span class="muted">(&amp;#f03b;)</span></div>
+                <div class="span3"><i class="icon-flag"></i>icon-flag<span class="muted">(&amp;#f03c;)</span></div>
+                <div class="span3"><i class="icon-search"></i>icon-search<span class="muted">(&amp;#f03d;)</span></div>
+                <div class="span3"><i class="icon-copy"></i>icon-copy<span class="muted">(&amp;#f03e;)</span></div>
+                <div class="span3"><i class="icon-edit"></i>icon-edit<span class="muted">(&amp;#f03f;)</span></div>
+              </div>
+              <div class="wsg-example">
+                <p>Icons are usually implemented with a pseudo class like :before or :after defineing the icon with the content value.</p>
+                <i class="icon-home"></i>
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                    .examlpe-class:before {
+                        content: "\f037";
+                    }
+                </span>
+              </pre>
+            </article>
+          </section>
+          <section id="wsg-html-components">
+            <h1>HTML Components</h1>
+            <article id="wsg-lists">
+              <h3 class="heading">Lists</h3>
+              <div class="wsg-example">
+                <ul>
+                  <li>List item</li>
+                  <li>List item</li>
+                </ul>
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  <br />
+                  &lt;ul&gt;<br />
+                  &nbsp;&nbsp;&lt;li&gt;...&lt;/li&gt;<br />
+                  &lt;/ul&gt;
+                </span>
+              </pre>
+              <div class="wsg-example">
+                <ol>
+                  <li>List item</li>
+                  <li>List item</li>
+                </ol>
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  <br />
+                  &lt;ol&gt;<br />
+                  &nbsp;&nbsp;&lt;li&gt;...&lt;/li&gt;<br />
+                  &lt;/ol&gt;
+                </span>
+              </pre>
+              <div class="wsg-example">
+                <p>Use the class <code>linklist</code> to create a linked list with out bulletpoints.</p>
+                <ul class="linklist">
+                  <li><a href="#">List item</a></li>
+                  <li><a href="#">List item</a></li>
+                  <li><a href="#">List item</a></li>
+                </ul>
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  <br />
+                  &lt;ul class="linklist"&gt;<br />
+                  &nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;...&lt;/a&gt;/li&gt;<br />
+                  &lt;/ul&gt;
+                </span>
+              </pre>              
+            </article>
+            <article id="wsg-tables">
+              <h3 class="heading">Tables - four types</h3>
+              <div class="wsg-example">
+                    <p>Table, No wrap border on. Select <code>.notopbottomborder</code> when building the <code>&lt;table&gt;</code> in the text editor with the Epi server CMS. The table class will remove top and bottom borders.</p>
+                    <table class="notopbottomborder" border="0">
+                        <tbody>
+                            <tr><th scope="col">Header 1</th><th scope="col">Header 2</th><th scope="col">Header 3</th></tr>
+                            <tr>
+                                <td>Cell 1 1</td>
+                                <td>Cell 1 2</td>
+                                <td>Cell 1 3</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 2 1</td>
+                                <td>Cell 2 2</td>
+                                <td>Cell 2 3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>        
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  <br />                  
+                  &lt;table class="notopbottomborder"&gt;<br />
+                  &nbsp;&nbsp;&lt;thead&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;
+                  &lt;/th&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+                  
+                  &nbsp;&nbsp;&lt;/thead&gt;<br />
+                  &nbsp;&nbsp;&lt;tbody&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;
+                  &lt;/td&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+                  
+                  &nbsp;&nbsp;&lt;/tbody&gt;<br />
+                  &lt;/table&gt;<br />
+                </span>
+              </pre>
+
+              <div class="wsg-example">
+                    <p>Whole table scroll. Select <code>.whole-table-scroll</code> when building the <code>&lt;table&gt;</code> in the text editor with the Epi server CMS. The table will get a hrozintel scroll when table content is wider then the screen area.</p>
+                    <div class="scroll-table">
+                        <table class="whole-table-scroll" border="0">
+                            <thead>
+                                <tr><th>Header A</th><th>Header B</th><th>Header C</th><th>Header D</th><th>Header E</th><th>Header F</th><th>Header G</th><th>Header H</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Row 1 A</td>
+                                    <td>Row 1 B</td>
+                                    <td>Row 1 C</td>
+                                    <td>Row 1 D</td>
+                                    <td>Row 1 E</td>
+                                    <td>Row 1 F</td>
+                                    <td>Row 1 G</td>
+                                    <td>Row 1 H</td>
+                                </tr>
+                                <tr>
+                                    <td>Row 2 A</td>
+                                    <td>Row 2 B</td>
+                                    <td>Row 2 C</td>
+                                    <td>Row 2 D</td>
+                                    <td>Row 2 E</td>
+                                    <td>Row 2 F</td>
+                                    <td>Row 2 G</td>
+                                    <td>Row 2 H</td>
+                                </tr>
+                                <tr>
+                                    <td>Row 3 A</td>
+                                    <td>Row 3 B</td>
+                                    <td>Row 3 C</td>
+                                    <td>Row 3 D</td>
+                                    <td>Row 3 E</td>
+                                    <td>Row 3 F</td>
+                                    <td>Row 3 G</td>
+                                    <td>Row 3 H</td>
+                                </tr>
+                                <tr>
+                                    <td>Row 4 A</td>
+                                    <td>Row 4 B</td>
+                                    <td>Row 4 C</td>
+                                    <td>Row 4 D</td>
+                                    <td>Row 4 E</td>
+                                    <td>Row 4 F</td>
+                                    <td>Row 4 G</td>
+                                    <td>Row 4 H</td>
+                                </tr>
+                                <tr>
+                                    <td>Row 5 A</td>
+                                    <td>Row 5 B</td>
+                                    <td>Row 5 C</td>
+                                    <td>Row 5 D</td>
+                                    <td>Row 5 E</td>
+                                    <td>Row 5 F</td>
+                                    <td>Row 5 G</td>
+                                    <td>Row 5 H</td>
+                                </tr>
+                                <tr>
+                                    <td>Row 6 A</td>
+                                    <td>Row 6 B</td>
+                                    <td>Row 6 C</td>
+                                    <td>Row 6 D</td>
+                                    <td>Row 6 E</td>
+                                    <td>Row 6 F</td>
+                                    <td>Row 6 G</td>
+                                    <td>Row 6 H</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  <br />
+                  &lt;div class="scroll-table"&gt;<br />
+                  &nbsp;&lt;table class="whole-table-scroll"&gt;<br />
+                  &nbsp;&nbsp;&lt;thead&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;
+                  &lt;/th&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+                  
+                  &nbsp;&nbsp;&lt;/thead&gt;<br />
+                  &nbsp;&nbsp;&lt;tbody&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;
+                  &lt;/td&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+                  
+                  &nbsp;&nbsp;&lt;/tbody&gt;<br />
+                  &nbsp;&lt;/table&gt;<br />
+                  &lt;/div&gt;
+                </span>
+              </pre>
+
+            <div class="wsg-example">
+                <p>Table heading X Swap place with y. Select <code>.table-heading-x-swap-place-with-y</code> when building the <code>&lt;table&gt;</code> in the text editor with the Epi server CMS. When the viewport is undre 980px, the table cells will swap placees so the horizontal cells (rows) becomes vertical (on top of each other).</p>
+                <table class="table-heading-x-swap-place-with-y" border="0">
+                    <thead>
+                        <tr><th>Header A</th><th>Header B</th><th>Header C</th><th>Header D</th><th>Header E</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Row 1 A</td>
+                            <td>Row 1 B</td>
+                            <td>Row 1 C</td>
+                            <td>Row 1 D</td>
+                            <td>Row 1 E</td>
+                        </tr>
+                        <tr>
+                            <td>Row 2 A</td>
+                            <td>Row 2 B</td>
+                            <td>Row 2 C</td>
+                            <td>Row 2 D</td>
+                            <td>Row 2 E</td>
+                        </tr>
+                        <tr>
+                            <td>Row 3 A</td>
+                            <td>Row 3 B</td>
+                            <td>Row 3 C</td>
+                            <td>Row 3 D</td>
+                            <td>Row 3 E</td>
+                        </tr>
+                        <tr>
+                            <td>Row 4 A</td>
+                            <td>Row 4 B</td>
+                            <td>Row 4 C</td>
+                            <td>Row 4 D</td>
+                            <td>Row 4 E</td>
+                        </tr>
+                        <tr>
+                            <td>Row 5 A</td>
+                            <td>Row 5 B</td>
+                            <td>Row 5 C</td>
+                            <td>Row 5 D</td>
+                            <td>Row 5 E</td>
+                        </tr>
+                        <tr>
+                            <td>Row 6 A</td>
+                            <td>Row 6 B</td>
+                            <td>Row 6 C</td>
+                            <td>Row 6 D</td>
+                            <td>Row 6 E</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <pre class="wsg-example-code">
+            <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+            <span class="toggable">
+            <br />
+                &lt;div class="scroll-table"&gt;<br />
+                &lt;table class="whole-table-scroll"&gt;<br />
+                &nbsp;&nbsp;&lt;thead&gt;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;
+                &lt;/th&gt;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+
+                  
+                &nbsp;&nbsp;&lt;/thead&gt;<br />
+                &nbsp;&nbsp;&lt;tbody&gt;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;
+                &lt;/td&gt;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+
+                  
+                &nbsp;&nbsp;&lt;/tbody&gt;<br />
+                &lt;/table&gt;<br />
+                &lt;/div&gt;
+            </span>
+            </pre>
+
+            <div class="wsg-example">
+                <p>Static left column. Select <code>.static-left-column</code> when building the <code>&lt;table&gt;</code> in the text editor with the Epi server CMS. When the viewport is undre 980px, the table's first column will be static.</p>
+                <table class="static-left-column" border="0">
+                    <thead>
+                        <tr>
+                            <th>TableName</th>
+                            <th>Header B</th>
+                            <th>Header C</th>
+                            <th>Header D</th>
+                            <th>Header E</th>
+                            <th>Header F</th>
+                            <th>Header G</th>
+                            <th>Header H</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td">Row 1 A</td>
+                            <td>Row 1 B</td>
+                            <td>Row 1 C</td>
+                            <td>Row 1 D</td>
+                            <td>Row 1 E</td>
+                            <td>Row 1 F</td>
+                            <td>Row 1 G</td>
+                            <td>Row 1 H</td>
+                        </tr>
+                        <tr>
+                            <td>Row 2 A</td>
+                            <td>Row 2 B</td>
+                            <td>Row 2 C</td>
+                            <td>Row 2 D</td>
+                            <td>Row 2 E</td>
+                            <td>Row 2 F</td>
+                            <td>Row 2 G</td>
+                            <td>Row 2 H</td>
+                        </tr>
+                        <tr>
+                            <td>Row 3 A</td>
+                            <td>Row 3 B</td>
+                            <td>Row 3 C</td>
+                            <td>Row 3 D</td>
+                            <td>Row 3 E</td>
+                            <td>Row 3 F</td>
+                            <td>Row 3 G</td>
+                            <td>Row 3 H</td>
+                        </tr>
+                        <tr>
+                            <td>Row 4 A</td>
+                            <td>Row 4 B</td>
+                            <td>Row 4 C</td>
+                            <td>Row 4 D</td>
+                            <td>Row 4 E</td>
+                            <td>Row 4 F</td>
+                            <td>Row 4 G</td>
+                            <td>Row 4 H</td>
+                        </tr>
+                        <tr>
+                            <td>Row 5 A</td>
+                            <td>Row 5 B</td>
+                            <td>Row 5 C</td>
+                            <td>Row 5 D</td>
+                            <td>Row 5 E</td>
+                            <td>Row 5 F</td>
+                            <td>Row 5 G</td>
+                            <td>Row 5 H</td>
+                        </tr>
+                        <tr>
+                            <td>Row 6 A</td>
+                            <td>Row 6 B</td>
+                            <td>Row 6 C</td>
+                            <td>Row 6 D</td>
+                            <td>Row 6 E</td>
+                            <td>Row 6 F</td>
+                            <td>Row 6 G</td>
+                            <td>Row 6 H<br><br></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <pre class="wsg-example-code">
+            <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+            <span class="toggable">
+            <br />                
+                &lt;table class="static-left-column"&gt;<br />
+                &nbsp;&nbsp;&lt;thead&gt;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;
+                &lt;/th&gt;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+                  
+                &nbsp;&nbsp;&lt;/thead&gt;<br />
+                &nbsp;&nbsp;&lt;tbody&gt;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;
+                &lt;/td&gt;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+
+                &nbsp;&nbsp;&lt;/tbody&gt;<br />
+                &lt;/table&gt;<br />
+            </span>
+            </pre>
+            </article>
+            <article id="wsg-forms">
+              <h3 class="heading">Forms</h3>
+              <div class="wsg-example">
+                <p>Default form styles</p>
+                <!--<form>
+                  <fieldset>
+                    <legend>Legend</legend>
+                    <label>Label name</label>
+                    <input type="text" placeholder="type here...">
+                    <span class="help-block">Example block-level help text here.</span>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      Check me out
+                    </label>
+                    <button type="submit" class="btn">Submit</button>
+                  </fieldset>
+                </form>-->
+                  <h3 class="heading">Form elements</h3>
+                  <p>
+                      Here is the most common form element listed.
+                  </p>
+                  <div class="wsg-example1" id="formelements">
+                      <table class="table table-bordered">
+                          <thead>
+                              <tr>
+                                  <th>Inputs</th>
+                                  <th>types and attributes</th>
+                                  <th>Description</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      <input type="text" class="" value="Some text" />
+                                  </td>
+                                  <td><code>text</code></td>
+                                  <td>Standard input text element, valid text</td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <input type="text" class="error" value="Not valid text" />
+                                      <div class="error-info error"><span class="icon"></span><span class="message">Som feedback text!</span></div>
+                                  </td>
+                                  <td><code>text, class="error"</code></td>
+                                  <td>Standard input text element, if not valid</td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <input type="password" class="" value="Some text" />
+                                  </td>
+                                  <td><code>password</code></td>
+                                  <td>Standard input password element, hides the characters.</td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <input type="number" class="" value="123456" pattern="[0-9]*" />
+                                  </td>
+                                  <td><code><nobr>number ,pattern="[0-9]*"</nobr></code></td>
+                                  <td>Standard input number element only 123456,.-+ caracters can be written.</td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <input type="email" class="" value="valid.email@address.se" />
+                                  </td>
+                                  <td><code>email</code></td>
+                                  <td>Standard input email element. Depending on browser support, the e-mail address can be automatically validated when submitted. Some smartphones recognize the email type, and adds ".com" to the keyboard to match email input.</td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <div><input type="radio" id="radioButtonId1" name="radioName" value="1" checked="checked"><label for="radioButtonId1"><span><span></span></span>Radio button one</label>
+                                      </div>
+                                      <div><input type="radio" id="radioButtonId2" name="radioName" value="1"><label for="radioButtonId2"><span><span></span></span>Radio button two</label></div>
+                                  </td>
+                                  <td><code>radio</code></td>
+                                  <td>Radio select element. Created only with css. The trick is to map the <code>label tag</code> binding the radio button id with the attribute <code>for="radioButtonId"</code> together. Combining them and you can have any look you want :-)</td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <input type="checkbox" id="checkboxId" name="checkboxName" value="Pure css checkbox" checked="checked" ><label for="checkboxId"><span><span></span></span>Pure css checkbox</label>
+                                  </td>
+                                  <td><code>checkbox</code></td>
+                                  <td>Checkbox element. Created only with css and using the check indecator from the SEB font icon library. The trick is to map the <code>label tag</code> binding the checkbox id with the attribute <code>for="checkboxId"</code> together. Combining them and you can have any look you want :-)</td>
+                              </tr>
+
+                          </tbody>
+                      </table>
+
+                      <table class="table table-bordered">
+                          <thead>
+                              <tr>
+                                  <th>Select element</th>
+                                  <th>attributes</th>
+                                  <th>Description</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      <select>
+                                          <option>Ett</option>
+                                          <option>Två</option>
+                                          <option>Tre</option>
+                                      </select>
+                                  </td>
+                                  <td><code>class</code></td>
+                                  <td>Select something from the dropdown list.</td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <select class="error">
+                                          <option>Ett</option>
+                                          <option selected="selected">Två</option>
+                                          <option>Tre</option>
+                                      </select>
+                                      <div class="error-info error"><span class="icon"></span><span class="message">Som feedback text!</span></div>
+                                  </td>
+                                  <td><code>class="error"</code></td>
+                                  <td>The select element look if the validation is invalid.</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <table class="table table-bordered">
+                          <thead>
+                              <tr>
+                                  <th>Textarea element</th>
+                                  <th>attributes</th>
+                                  <th>Description</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+
+                              <tr>
+                                  <td>
+                                      <textarea>Some text here</textarea>
+                                  </td>
+                                  <td><code>class</code></td>
+                                  <td>Textarea element. The textarea element is uset to send plain texts.</td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <textarea class="error">Some wrong text here!</textarea>
+                                      <div class="error-info error"><span class="icon"></span><span class="message">Som feedback text!</span></div>
+                                  </td>
+                                  <td><code>class="error"</code></td>
+                                  <td>Textarea element. The textarea element having invalid text.</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  <br />
+                    &lt;form&gt;<br />
+                    &nbsp;&nbsp;&lt;fieldset&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" class="" value="Some text" /&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" class="" value="Some text" /&gt;<br />
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="error-info error"/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="icon"/&gt;&lt;/span/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="message"/&gt;Som feedback text!&lt;/span/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div/&gt;<br /><br />
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="password" class="" value="Some text"/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="number" class="" value="123456" pattern="[0-9]*"/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" class="" value="valid.email@address.se"/&gt;<br /><br />
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio" id="radioButtonId1" name="radioName" value="1" checked="checked"&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="radioButtonId1"&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;&lt;/span&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radio button one<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/label&gt;<br /><br />
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" id="checkboxId" name="checkboxName" value="Pure css checkbox" checked="checked"/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="checkboxId"&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;&lt;/span&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pure css checkbox<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/label&gt;<br /><br />
+
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;select/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option/&gt;Ett&lt;/option/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option/&gt;Två&lt;/option/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option/&gt;Tre&lt;/option/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/select/&gt;<br /><br />
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;select class="error"/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option/&gt;Ett&lt;/option/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option/&gt;Två&lt;/option/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option/&gt;Tre&lt;/option/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/select/&gt;<br />
+
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="error-info error"/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="icon"/&gt;&lt;/span/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="message"/&gt;Som feedback text!&lt;/span/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div/&gt;<br /><br />
+
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea/&gt;Some text here&lt;/textarea/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea class="error"/&gt;Some text here&lt;/textarea/&gt;<br />
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="error-info error"/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="icon"/&gt;&lt;/span/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="message"/&gt;Som feedback text!&lt;/span/&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div/&gt;<br /><br />
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" class="btn"&gt;Submit&lt;/input&gt;<br />
+                    &nbsp;&nbsp;&lt;/fieldset&gt;<br />
+                    &lt;/form&gt;
+                </span>
+                
+              </pre>
+              <!--<div class="wsg-example">
+                <p>Inline form</p>
+                <form class="form-inline">
+                  <input type="text" class="input-small" placeholder="Email">
+                  <input type="password" class="input-small" placeholder="Password">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    Remember me
+                  </label>
+                  <button type="submit" class="btn">Sign in</button>
+                </form>
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  <br />
+                  &lt;form class="form-inline"&gt;<br />
+                  &nbsp;&nbsp;&lt;input type="text" class="input-small" placeholder="Email"&gt;<br />
+                  &nbsp;&nbsp;&lt;input type="password" class="input-small" placeholder="Password"&gt;<br />
+                  &nbsp;&nbsp;&lt;label class="checkbox"&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox"&gt; Remember me<br />
+                  &nbsp;&nbsp;&lt;/label&gt;<br />
+                  &nbsp;&nbsp;&lt;button type="submit" class="btn"&gt;Sign in&lt;/button&gt;<br />
+                  &lt;/form&gt;
+                </span>
+              </pre>
+              <div class="wsg-example">
+                <p>Horizontal form</p>
+                <form class="form-horizontal">
+                  <div class="control-group">
+                    <label class="control-label" for="inputEmail">Email</label>
+                    <div class="controls">
+                      <input type="text" id="inputEmail" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputPassword">Password</label>
+                    <div class="controls">
+                      <input type="password" id="inputPassword" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        Remember me
+                      </label>
+                      <button type="submit" class="btn">Sign in</button>
+                    </div>
+                  </div>
+                </form>
+              </div>-->
+              <!--<pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  <br />
+                  &lt;form class="form-horizontal"&gt;<br />
+                  &nbsp;&nbsp;&lt;div class="control-group"&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="control-label" for="inputEmail"&gt;Email&lt;/label&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="controls"&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="inputEmail" placeholder="Email"&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                  &nbsp;&nbsp;&lt;/div&gt;<br />
+                  &nbsp;&nbsp;&lt;div class="control-group"&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="control-label" for="inputPassword"&gt;Password&lt;/label&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="controls"&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="password" id="inputPassword" placeholder="Password"&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                  &nbsp;&nbsp;&lt;/div&gt;<br />
+                  &nbsp;&nbsp;&lt;div class="control-group"&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="controls"&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="checkbox"&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox"&gt; Remember me<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/label&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="submit" class="btn"&gt;Sign in&lt;/button&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                  &nbsp;&nbsp;&lt;/div&gt;<br />
+                  &lt;/form&gt;
+                </span>
+              </pre>
+              <div class="wsg-example">
+                <p>Supported form controls</p>
+                <input type="text" placeholder="Text input">
+                <br />
+                <textarea placeholder="Textarea" rows="3"></textarea>
+                <label class="checkbox">
+                  <input type="checkbox" value="">
+                  Checkbox
+                </label>
+                <label class="radio">
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                  Radiobutton
+                </label>
+                <label class="radio">
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                  Radiobutton
+                </label>
+                <br />
+                <p>Add the <code>.inline</code> class to a series of checkboxes or radios for controls appear on the same line.</p>
+                <label class="checkbox inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1">
+                  1
+                </label>
+                <label class="checkbox inline">
+                  <input type="checkbox" id="inlineCheckbox2" value="option2">
+                  2
+                </label>
+                <label class="checkbox inline">
+                  <input type="checkbox" id="inlineCheckbox3" value="option3">
+                  3
+                </label>
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  <br />
+                  &lt;input type="text" placeholder="Text input"&gt;<br />
+                  &lt;textarea rows="3"&gt;&lt;/textarea&gt;<br />
+                  &lt;label class="checkbox"&gt;<br />
+                  &nbsp;&nbsp;&lt;input type="checkbox" value=""&gt;<br />
+                  &nbsp;&nbsp;Checkbox<br />
+                  &lt;/label&gt;<br />                  
+                  &lt;label class="radio"&gt;<br />
+                  &nbsp;&nbsp;&lt;input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked&gt;<br />
+                  &nbsp;&nbsp;Radiobutton<br />
+                  &lt;/label&gt;<br />
+                  &lt;label class="radio"&gt;<br />
+                  &nbsp;&nbsp;&lt;input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"&gt;<br />
+                  &nbsp;&nbsp;Radiobutton<br />
+                  &lt;/label&gt;<br />
+                  <br />
+                  &lt;label class="checkbox inline"&gt;<br />
+                  &nbsp;&nbsp;&lt;input type="checkbox" id="inlineCheckbox1" value="option1"&gt; 1<br />
+                  &lt;/label&gt;<br />
+                  &lt;label class="checkbox inline"&gt;<br />
+                  &nbsp;&nbsp;&lt;input type="checkbox" id="inlineCheckbox2" value="option2"&gt; 2<br />
+                  &lt;/label&gt;<br />
+                  &lt;label class="checkbox inline"&gt;<br />
+                  &nbsp;&nbsp;&lt;input type="checkbox" id="inlineCheckbox3" value="option3"&gt; 3<br />
+                  &lt;/label&gt;
+                </span>
+              </pre>-->
+              <!--<div class="wsg-example">
+                <p>Select</p>
+                <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  <br />
+                  &lt;select&gt;<br />
+                  &nbsp;&nbsp;&lt;option&gt;1&lt;/option&gt;<br />
+                  &nbsp;&nbsp;&lt;option&gt;2&lt;/option&gt;<br />
+                  &nbsp;&nbsp;&lt;option&gt;3&lt;/option&gt;<br />
+                  &nbsp;&nbsp;&lt;option&gt;4&lt;/option&gt;<br />
+                  &nbsp;&nbsp;&lt;option&gt;5&lt;/option&gt;<br />
+                  &lt;/select&gt;
+                </span>
+              </pre>-->
+              <!--<div class="wsg-example">
+                <p><span class="label label-important">Note.</span> Needs <code>form.form-inline</code></p>
+                <p>Inline help text</p>
+                <form class="form-inline">
+                  <input type="text"><span class="help-inline">Inline help text</span>
+                </form>
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  <br />
+                  &lt;form class="form-inline"&gt;<br />
+                  &nbsp;&nbsp;&lt;input type="text"&gt;&lt;span class="help-inline"&gt;Inline help text&lt;/span&gt;<br />
+                  &lt;/form&gt;
+                </span>
+              </pre>
+              <div class="wsg-example">
+                <p><span class="label label-important">Note.</span> Needs <code>form.form-inline</code></p>
+                <p>Block help text</p>
+                <input type="text"><span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  <br />
+                  &lt;form class="form-inline"&gt;<br />
+                  &nbsp;&nbsp;&lt;input type="text"&gt;&lt;span class="help-block"&gt;A longer block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;<br />
+                  &lt;/form&gt;
+                </span>
+              </pre>-->
+            </article>
+              <!-- Buttons -->
+            <article id="wsg-buttons">
+              <h3 class="heading">Buttons</h3>
+              <p>
+                Button styles can be applied to anything with the <code>.btn</code> class applied. 
+                However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.
+              </p>
+              <div class="wsg-example">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>Button</th>
+                      <th>class=""</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <button type="button" class="btn">&ndash;</button></td>
+                      <td><code>btn simple</code></td>
+                      <td>Standard gray button with gradient</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button type="button" class="btn wanted">Primary</button></td>
+                      <td><code>btn wanted</code></td>
+                      <td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
+                    </tr>                                                            
+                  </tbody>
+                </table>
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  &lt;button class="btn simple" type="button"&gt;Default&lt;/button&gt;
+                </span>
+              </pre>              
+            </article>
+              <!-- Alerts -->
+            <article id="wsg-alerts">
+              <h3 class="heading">Alerts Critical Information</h3>
+              <div class="wsg-example">
+                  <p>The Critical Information block can be published with two differend background colors. <code>.green-tint or yellow-tint</code></p>
+
+                  <div class="box block green-tint criticalinformationblockv2">
+                      <div class="contentwrap">
+                        <p>
+                            <span class="disclaimer-grey">
+                                <span>
+                                En del av våra kunder har för närvarande problem med att logga in med BankID. Om du har det kan du 
+                                istället använda mobilt BankID eller din digipass. Vi felsöker och hoppas kunna lösa problemet med 
+                                inloggningen så fort som möjligt.
+                                </span>
+                            </span>
+                        </p>
+                      </div>
+                  </div>
+                  <div class="box block yellow-tint criticalinformationblockv2">
+                      <div class="contentwrap">
+                            <p class="disclaimer-grey"><strong>Inloggningsproblem med BankID</strong></p>
+                            <p>
+                                <a title="För att lösa problemet klicka här" href="#" target="_blank">
+                                    För att lösa problemet klicka här
+                                </a>
+                            </p>
+                      </div>
+                  </div>
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  <br />
+                    &lt;div class="box block green-tint criticalinformationblockv2"&gt;<br />
+                    &nbsp;&lt;div class="contentwrap"&gt;<br />
+                    &nbsp;&nbsp;&lt;p&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&lt;span class="disclaimer-grey"&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En del av våra kunder har för närvarande problem med att logga in med BankID.<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Om du har det kan du istället använda mobilt BankID eller din digipass. <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vi felsöker och hoppas kunna lösa problemet med inloggningen så fort som möjligt.<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&lt;/span&gt;<br />
+                    &nbsp;&nbsp;&lt;/p&gt;<br />
+                    &nbsp;&lt;/div&gt;<br />
+                    &lt;/div&gt;<br />
+                </span>
+              </pre>            
+            </article>
+            <article id="wsg-pagination">
+              <h3 class="heading">Pagination</h3>
+              <div class="wsg-example">
+                  <p>Use <code>.current</code> to indicate the current page. Use <code>.hidden-phone</code> to hide the paging numbers in small sceens.</p>
+                
+                  <div class="paging">
+                      <ul>
+                          <li class="prev"><a href="#">Previous</a></li>
+                          <li class="hidden-phone"><a href="#">1</a></li>
+                          <li class="current hidden-phone"><span>2</span></li>
+                          <li class="hidden-phone"><a href="#">3</a></li>
+                          <li class="hidden-phone"><a href="#">4</a></li>
+                          <li class="hidden-phone"><a href="#">5</a></li>
+                          <li class="hidden-phone"><a href="#">6</a></li>
+                          <li class="hidden-phone"><a href="#">7</a></li>
+                          <li class="hidden-phone"><a href="#">8</a></li>
+                          <li class="hidden-phone"><a href="#">9</a></li>
+                          <li class="hidden-phone"><a href="#">10</a></li>
+                          <li class="next"><a href="#">Next</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <pre class="wsg-example-code">
+                  <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                  <span class="toggable">
+                    <br />
+                    &lt;div class="paging"&gt;<br />
+                    &nbsp;&lt;ul&gt;<br />
+                    &nbsp;&nbsp;&lt;li class="prev"&gt;&lt;a href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&lt;li class="hidden-phone"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&lt;li class="current hidden-phone"&gt;&lt;span&gt;2&lt;/span&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&lt;li class="hidden-phone"&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&lt;li class="hidden-phone"&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&lt;li class="hidden-phone"&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&lt;li class="hidden-phone"&gt;&lt;a href="#"&gt;6&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&lt;li class="hidden-phone"&gt;&lt;a href="#"&gt;7&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&lt;li class="hidden-phone"&gt;&lt;a href="#"&gt;8&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&lt;li class="hidden-phone"&gt;&lt;a href="#"&gt;9&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&lt;li class="hidden-phone"&gt;&lt;a href="#"&gt;10&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&lt;li class="next"&gt;&lt;a href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;<br />
+                    &nbsp;&lt;/ul&gt;<br />
+                    &lt;/div&gt;<br />
+                  </span>
+                </pre>
+            </article>
+            <article id="wsg-breadcrumbs">
+              <h3 class="heading">Breadcrumbs</h3>
+              <div class="wsg-example">
+                
+                  <ul class="breadcrumbs">
+                      <li class="home"><a href="/">Hem</a></li>
+                      <li><a href="/privat">Privat</a></li>
+                      <li><a href="/privat/spara-och-placera">Spara &amp; placera</a></li>
+                      <li><a href="/privat/spara-och-placera/radgivning">Rådgivning</a></li>
+                      <li><span class="item">Privatrådgivning</span></li>
+                  </ul>
+
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                  <span class="toggable">
+                  <br />
+                    &lt;ul class="breadcrumbs"&lt;<br />
+                    &nbsp;&lt;li class="home"&lt;&lt;a href="/"&lt;Hem&lt;/a&lt;&lt;/li&lt;<br />
+                    &nbsp;&lt;li&lt;&lt;a href="/privat"&lt;Privat&lt;/a&lt;&lt;/li&lt;<br />
+                    &nbsp;&lt;li&lt;&lt;a href="/privat/spara-och-placera"&lt;Spara &amp; placera&lt;/a&lt;&lt;/li&lt;<br />
+                    &nbsp;&lt;li&lt;&lt;a href="/privat/spara-och-placera/radgivning"&lt;Rådgivning&lt;/a&lt;&lt;/li&lt;<br />
+                    &nbsp;&lt;li&lt;&lt;span class="item"&lt;Privatrådgivning&lt;/span&lt;&lt;/li&lt;<br />
+                    &lt;/ul&lt;<br />
+                </span>
+              </pre>
+            </article>
+            <article id="wsg-tabs">
+              <h3 class="heading">Tabs</h3>
+              <div class="wsg-example">
+                  <p>Use <code>.current</code> to indicate the current tab. Here we use a jquary plugin. For more infimation visit<a target="blank" href="http://github.com/ginader/Accessible-Tabs">Accessible Tabs</a></p>
+                  <ul id="yearselector" class="tabs-list">
+                      <li class="current"><a href="#upcomingevents">Kommande events</a></li>
+                      <li><a href="#calendaryear2014">2014</a></li>
+                      <li><a href="#calendaryear2015">2015</a></li>
+                  </ul>
+                  <ul id="yearselector" class="tabs-list">
+                      <li><a href="#upcomingevents">Kommande events</a></li>
+                      <li class="current"><a href="#calendaryear2014">2014</a></li>
+                      <li><a href="#calendaryear2015">2015</a></li>
+                  </ul>
+
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  <br />
+                    &lt;ul id="yearselector" class="tabs-list"&gt;<br />
+                    &nbsp;&lt;li&gt;<br />
+                    &nbsp;&nbsp;&lt;a href="#upcomingevents"&gt;Kommande events&lt;/a&gt;<br />
+                    &nbsp;&lt;/li&gt;<br />
+                    &nbsp;&lt;li class="current"&gt;<br />
+                    &nbsp;&nbsp;&lt;a href="#calendaryear2014"&gt;2014&lt;/a&gt;<br />
+                    &nbsp;&lt;/li&gt;<br />
+                    &nbsp;&lt;li&gt;<br />
+                    &nbsp;&nbsp;&lt;a href="#calendaryear2015"&gt;2015&lt;/a&gt;<br />
+                    &nbsp;&lt;/li&gt;<br />
+                    &lt;/ul&gt;<br />
+                </span>
+              </pre>
+            </article>
+            <article id="wsg-panel">
+              <h3 class="heading">Panel</h3>
+              <div class="wsg-example">
+                  <div class="box block  col col-1 span3 general2 supportingcontentblockv2">
+                      <h3 class="headline">Vi hjälper dig</h3>
+                      <div class="panel-content">
+                          <div>
+                              <p>
+                                  <a title="Bli företagskund" href="/foretag/bli-foretagskund?icmp=sebsef_help_link_fc1_bliforetagskund">Bli företagskund</a><br>
+                                  <a title="Kundservice" href="/kundservice/kundservice-foretag?icmp=sebsef_help_link_fc2_kundservice">Kundservice</a><br>
+                                  <a title="Boka rådgivning" href="/kundservice/kundservice-foretag/boka-radgivning?icmp=sebsef_help_link_fc3_radgivning">Boka rådgivning</a>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  <br />
+                    &lt;div class="box block  col col-1 span3 general2 supportingcontentblockv2"&gt;<br />
+                    &nbsp;&lt;h3 class="headline"&gt;Vi hjälper dig&lt;/h3&gt;<br />
+                    &nbsp;&lt;div class="panel-content"&gt;<br />
+                    &nbsp;&nbsp;&lt;div&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&lt;p&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Bli företagskund&lt;/a&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Kundservice&lt;/a&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Boka rådgivning&lt;/a&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&lt;/p&gt;<br />
+                    &nbsp;&nbsp;&lt;/div&gt;<br />
+                    &nbsp;&lt;/div&gt;<br />
+                    &lt;/div&gt;<br />
+                </span>
+              </pre>
+            </article>
+          </section>
+          <section id="wsg-javascript-components">
+            <h1>JS Components</h1>
+            <article id="wsg-modal">
+              <h3 class="heading">Modal</h3>
+              <div class="wsg-example">
+                <div id="myModalID" class="modal" role="dialog" aria-labelledby="modalLabel" style="position: relative; top: auto; left: auto; right: auto; margin: 0 auto 20px; z-index: 1; max-width: 100%;">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 id="modalLabel">Modal header</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>Modal body text</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#" class="btn simple do-not-link">Close</a>
+                    <a href="#" class="btn wanted do-not-link">Save changes</a>
+                  </div>
+                </div>
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">
+                  <br />
+                  &lt;div id="myModalID" class="modal hide fade" role="dialog" aria-labelledby="modalLabel"&gt;<br />
+                  &nbsp;&nbsp;&lt;div class="modal-header"&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;&amp;times;&lt;/button&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 id="modalLabel"&gt;Modal header&lt;/h3&gt;<br />
+                  &nbsp;&nbsp;&lt;/div&gt;<br />
+                  &nbsp;&nbsp;&lt;div class="modal-body"&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Modal body text&lt;/p&gt;<br />
+                  &nbsp;&nbsp;&lt;/div&gt;<br />
+                  &nbsp;&nbsp;&lt;div class="modal-footer"&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="btn"&gt;Close&lt;/a&gt;<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="btn btn-primary"&gt;Save changes&lt;/a&gt;<br />
+                  &nbsp;&nbsp;&lt;/div&gt;<br />
+                  &lt;/div&gt;
+                </span>
+              </pre>
+              <div class="wsg-example">
+                <a data-toggle="modal" href="#myModal1">Show modal</a> via data attributes. Options can be passed via data attributes, ex: <code>data-backdrop=""</code>.
+                <div id="myModal1" class="modal" role="dialog" aria-labelledby="modalLabel">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 id="H1">Modal header</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>Modal body text</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#" class="btn simple do-not-link" data-dismiss="modal">Close</a>
+                    <a href="#" class="btn wanted do-not-link">Save changes</a>
+                  </div>
+                </div>
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">                  
+                  &lt;a data-toggle="modal" href="#myModal"&gt;Show modal&lt;/a&gt;                 
+                </span>
+              </pre>
+              <div class="wsg-example">
+                <a data-toggle="modal" href="#myModal2">Show modal</a> via JavaScript. Options can be passed to the modal method.
+                <div id="myModal2" class="modal" role="dialog" aria-labelledby="modalLabel">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 id="H2">Modal header</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>Modal body text</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#" class="btn do-not-link" data-dismiss="modal">Close</a>
+                    <a href="#" class="btn btn-primary do-not-link">Save changes</a>
+                  </div>
+                </div>
+              </div>
+              <pre class="wsg-example-code">
+                <a href="#" class="code-lock"><span class="label label-info">Show/hide code</span></a>
+                <span class="toggable">        
+                  <br />          
+                  $('#myModal').modal("toggle/show/hide");<br />
+                  <br />                                
+                  $('#myModal').modal({<br />
+                  &nbsp;&nbsp;backdrop: boolean (default true),<br />
+                  &nbsp;&nbsp;keyboard: boolean (default true),<br />
+                  &nbsp;&nbsp;show:     boolean (default true),<br />
+                  &nbsp;&nbsp;remote:   url.html  (default false)<br />
+                  });              
+                </span>
+              </pre>
+            </article>
+            <article id="wsg-popover">
+              <h3 class="heading">Popover/Tooltip</h3>
+              <div class="wsg-example">
+                <p>Enable popover functionality with <code>$("[data-toggle=popover]").popover();</code> (or any other selector you may want/need).</p>
+                <a href="#" class="do-not-link" data-toggle="popover" data-content="This is some content." data-placement="right" data-original-title="A Title">Click to toggle popover</a>
+              </div>
+              <pre class="wsg-example-code">
+                <br />
+                &lt;a href="#" data-toggle="popover" data-content="This is some content." data-placement="right" data-original-title="A Title"&gt;Click to toggle popover&lt;/a&gt;<br />
+                <br />
+              </pre>
+            </article>
+          </section>
+        </div>
+        <div class="span2">
+          <nav class="affix navbar-right" style="position: fixed; top: 170px;">
+            <ul id="site-nav" class="nav">
+              <li><a href="#wsg-overview">Overview</a></li>
+              <li><a href="#wsg-typography">Typography</a>
+                <ul class="nav secondary">
+                  <li><a href="#wsg-headings">Headings</a></li>
+                  <li><a href="#wsg-body-copy">Body copy</a></li>
+                  <li><a href="#wsg-anfang">Anfang</a></li>
+                  <li><a href="#wsg-icons">Icons</a></li>
+                </ul>
+              </li>
+              <li><a href="#wsg-html-components">HTML Components</a>
+                <ul class="nav secondary">
+                  <li><a href="#wsg-lists">Lists</a></li>
+                  <li><a href="#wsg-tables">Tables</a></li>
+                  <li><a href="#wsg-forms">Forms</a></li>
+                  <li><a href="#wsg-buttons">Buttons</a></li>
+                  <li><a href="#wsg-alerts">Alerts</a></li>
+                  <li><a href="#wsg-pagination">Pagination</a></li>
+                  <li><a href="#wsg-breadcrumbs">Breadcrumbs</a></li>
+                  <li><a href="#wsg-tabs">Tabs</a></li>
+                  <li><a href="#wsg-panel">Panel</a></li>
+                </ul>
+              </li>
+              <li><a href="#wsg-javascript-components">JS Components</a>
+                <ul class="nav secondary">
+                  <li><a href="#wsg-modal">Modal</a></li>
+                  <li><a href="#wsg-dropdown">Dropdown</a></li>
+                  <li><a href="#wsg-popover">Popover/tooltip</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
