@@ -1,6 +1,6 @@
 Model
 
-Event
+Event - OK
 	-Id
 	-Description
 	-Tags
@@ -10,22 +10,22 @@ Event
 	-CreationDate
 	-CreatorId
 	
-EventRate
+EventRate - OK
 	-Id
 	-EventId
 	-Rate
 	
-User
+User - OK
 	-Id
 	-UserName
 	-Pwd
 
-EventParticipant
+EventParticipant - OK
 	-Id
 	-EventId
 	-UserId
 	
-Tag
+Tag - OK
 	-Id
 	-Name
 	
