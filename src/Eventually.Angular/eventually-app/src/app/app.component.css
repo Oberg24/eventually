@@ -1,4 +1,23 @@
+﻿#page-header {
+  background-image: url(/assets/img/summer_1920x160.jpg);
+  padding: 40px 0;
+}
+
+
+  #page-header > .site-container > h1 {
+    color: white;
+    font-size: 60px;
+  }
+
 .eventContainer {
+}
+
+.eventImageContainer {
+  max-width: 230px;
+  max-height: 230px;
+}
+
+/*.eventContainer {
     width: 90%;
     height: 300px;
     margin: 0 auto;
@@ -22,10 +41,9 @@
     float: right;
     color: white;
     font-size: 23px;
-}
+}*/
 .eventImage {
-    width: 100%;
-    height: 75%;
+
 }
 
 .eventHeader {
