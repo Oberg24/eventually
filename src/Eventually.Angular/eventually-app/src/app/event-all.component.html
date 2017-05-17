@@ -1,7 +1,7 @@
 ﻿<div *ngIf="tags" style="margin-bottom: 10px">
-  <a (click)="getEvents()" class="btn wanted">Återställ filter</a>
+  <a (click)="getEvents()" class="btn btn-small wanted">Återställ filter</a>
   <span *ngFor="let tag of tags">
-    <button (click)="getEventsWithTag(tag.id)" class="btn simple">{{tag.name}}</button>
+    <button (click)="getEventsWithTag(tag.id)" class="btn btn-small simple">{{tag.name}}</button>
   </span>
 </div>
 
