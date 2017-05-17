@@ -30,7 +30,12 @@ export class EventAllComponent implements OnInit {
     }
 
     getEventsWithTag(tagId: number) {
-        this.eventService.getEventsByTagId(tagId).subscribe(events => this.events = events);
+        this.eventService.getEventsByTagId(tagId).subscribe(events => {
+            events.forEach(function (item) {
+                item.goldStars = (Math.floor(Math.random() * (100 - 0 + 1)) + 0);
+            });
+            this.events = events;
+        });
     }
 
     toggleGoldStar(event: Event) {
