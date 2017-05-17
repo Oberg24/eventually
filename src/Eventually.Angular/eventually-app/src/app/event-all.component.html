@@ -1,12 +1,18 @@
 ﻿<article *ngFor="let event of events" class="eventContainer box block dataandnumbers">
-  <h3 class="headline">{{event.name}}</h3>
+  <a [routerLink]="['/event', event.id]">
+    <h3 class="headline">{{event.name}}</h3>
+  </a>
   <div class="event-content">
     <div class="eventImageContainer">
-      <img class="eventImage" src="/assets/img/IMG_0328.JPG" />
+      <img class="eventImage" src="{{event.imageUrl}}" />
     </div>
     <div class="eventTextContainer">
-      <p>Startdatum: {{event.startTime}}</p>
-      <p>Startdatum: {{event.endTime}}</p>
+      <p>Start: {{event.startTime}}</p>
+      <p>Slut: {{event.endTime}}</p>
+      <p class="event-description">{{ event.description | slice:0:150 }} ...</p>
+      <span *ngFor="let tag of tags">
+        <span class="label label-success">{{tag.name}}</span>
+      </span>
     </div>
   </div>
 </article>

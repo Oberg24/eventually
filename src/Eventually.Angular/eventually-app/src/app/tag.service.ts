@@ -5,20 +5,16 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 
-import { Event } from './event';
+import { Tag } from './tag';
 
 @Injectable()
-export class EventService {
+export class TagService {
     private eventsUrl = 'http://home.naslund.io:5000/api/events';
 
     constructor(private http: Http) { }
 
-    getEvents(): Observable<Event[]> {
-        return this.http.get(this.eventsUrl).map(this.extractData);
-    }
-
-    getEvent(id: number): Observable<Event> {
-        return this.http.get(this.eventsUrl + '/' + id).map(this.extractData);
+    getTagsByEventId(id: number): Observable<Tag[]> {
+        return this.http.get(this.eventsUrl + '/' + id + '/tags').map(this.extractData);
     }
 
     private extractData(res: Response) {

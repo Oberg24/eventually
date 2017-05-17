@@ -1,16 +1,13 @@
 ﻿import { Component, OnInit } from '@angular/core';
 
-import { Observable } from 'rxjs/Observable';
-
 import { Event } from './event';
-import { Tag } from './tag';
 import { EventService } from './event.service';
 
 
 @Component({
   selector: 'app-event-all',
   templateUrl: './event-all.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./event-all.component.css'],
   providers: [ EventService ] 
 })
 
@@ -20,10 +17,10 @@ export class EventAllComponent implements OnInit {
     constructor(private eventService: EventService) { }
 
     ngOnInit() {
-        this.getHeroes();
+        this.getEvents();
     }
 
-    getHeroes() {
+    getEvents() {
         this.eventService.getEvents().subscribe(events => this.events = events);
     }
 }

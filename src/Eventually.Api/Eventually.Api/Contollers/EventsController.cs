@@ -43,6 +43,18 @@ namespace Eventually.Api.Contollers {
 			
 		}
 
+        [HttpGet]
+        [Route("{eventId}/tags")]
+        public async Task<IActionResult> GetEventTags(int eventId)
+        {
+            using (var context = new EventuallyContext())
+            {
+                var eventTags = context.EventTags.Where(x => x.Event.Id == eventId);
+                var tags = eventTags.Select(x => x.Tag);
+                return Ok(tags.ToList());
+            }
+        }
+
 		[HttpDelete]
 		[Route("{id}")]
 		public async Task<IActionResult> DeleteById(int id) {

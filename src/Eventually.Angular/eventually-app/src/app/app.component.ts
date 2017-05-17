@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 
 import { Event } from './event';
 import { EventService } from './event.service';
@@ -9,8 +9,6 @@ import { EventService } from './event.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  events: Event[];
-  selectedEvent: Event;
 }
 
 
