@@ -5,6 +5,6 @@ import { Event } from './event';
 @Injectable()
 export class EventService {
     getEvents(): Promise<Event[]> {
-        return Promise.resolve(EVENTS);
+        return Promise.resolve(Events);
     }
 }
