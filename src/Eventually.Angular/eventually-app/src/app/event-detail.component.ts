@@ -6,6 +6,7 @@ import 'rxjs/add/operator/switchMap';
 
 import { Event } from './event';
 import { Tag } from './tag';
+import { User } from './user';
 import { EventService } from './event.service';
 import { TagService } from './tag.service';
 
@@ -18,6 +19,7 @@ import { TagService } from './tag.service';
 export class EventDetailComponent implements OnInit {
     event: Event;
     tags: Tag[];
+    participants: User[];
 
     constructor(private eventService: EventService, private tagService: TagService, private route: ActivatedRoute, private location: Location) { }
 
@@ -29,5 +31,9 @@ export class EventDetailComponent implements OnInit {
         this.route.params
             .switchMap((params: Params) => this.tagService.getTagsByEventId(+params['id']))
             .subscribe(tags => this.tags = tags);
+
+        this.route.params
+            .switchMap((params: Params) => this.eventService.getEventParticipants(+params['id']))
+            .subscribe(participants => this.participants = participants);
     }
 }
