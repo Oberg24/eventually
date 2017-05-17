@@ -5,4 +5,6 @@
     imageUrl: string;
     startTime: string;
     endTime: string;
+    showGold: boolean;
+    goldStars: number;
 }

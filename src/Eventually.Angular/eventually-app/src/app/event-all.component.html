@@ -3,16 +3,20 @@
     <h3 class="headline">{{event.name}}</h3>
   </a>
   <div class="event-content">
-    <div class="eventImageContainer">
-      <img class="eventImage" src="{{event.imageUrl}}" />
+    <div class="event-image-wrapper">
+      <div class="eventImageContainer">
+        <img class="eventImage" src="{{event.imageUrl}}" />
+      </div>
+      <span class="event-rating">{{event.goldStars}} <i class="icon-star icon-large" style="font-size: 30px" [ngClass]="{'activePoll' : event.showGold }" (click)="toggleGoldStar(event)"></i></span>
     </div>
     <div class="eventTextContainer">
       <p>Start: {{event.startTime}}</p>
       <p>Slut: {{event.endTime}}</p>
       <p class="event-description">{{ event.description | slice:0:150 }} ...</p>
-      <span *ngFor="let tag of tags">
+      <div *ngFor="let tag of tags">
         <span class="label label-success">{{tag.name}}</span>
-      </span>
+      </div>
+     
     </div>
   </div>
 </article>
