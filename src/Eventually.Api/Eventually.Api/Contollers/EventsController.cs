@@ -14,14 +14,7 @@ namespace Eventually.Api.Contollers {
 		public async Task<IActionResult> Get() {
 			
 			using(var context = new Models.EventuallyContext()) {
-                var events = context.Events
-                    .Include(x => x.EventParticipants)
-                    .ThenInclude(x => x.User)
-                    .Include(x => x.EventTags)
-                    .ThenInclude(x => x.Tag)
-                    .Include(x => x.Creator)
-                    .ToList();
-
+                var events = context.Events.ToList();
                 return Ok(events);
 			}
 		}
@@ -49,6 +42,18 @@ namespace Eventually.Api.Contollers {
 			}
 			
 		}
+
+        [HttpGet]
+        [Route("{eventId}/tags")]
+        public async Task<IActionResult> GetEventTags(int eventId)
+        {
+            using (var context = new EventuallyContext())
+            {
+                var eventTags = context.EventTags.Where(x => x.Event.Id == eventId);
+                var tags = eventTags.Select(x => x.Tag);
+                return Ok(tags.ToList());
+            }
+        }
 
 		[HttpDelete]
 		[Route("{id}")]
