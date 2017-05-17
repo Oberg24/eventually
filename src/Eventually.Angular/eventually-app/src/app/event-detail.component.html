@@ -1,7 +1,7 @@
 ﻿<a routerLink="/events">Tillbaka till alla event</a>
 <div *ngIf="event">
   <h2>{{event.name}}</h2>
-  <div *ngIf="tags.length > 0" style="margin-bottom: 10px">
+  <div style="margin-bottom: 10px">
     <span *ngFor="let tag of tags">
       <span class="label label-success">{{tag.name}}</span>
     </span>
