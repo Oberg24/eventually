@@ -14,14 +14,7 @@ namespace Eventually.Api.Contollers {
 		public async Task<IActionResult> Get() {
 			
 			using(var context = new Models.EventuallyContext()) {
-                var events = context.Events
-                    .Include(x => x.EventParticipants)
-                    .ThenInclude(x => x.User)
-                    .Include(x => x.EventTags)
-                    .ThenInclude(x => x.Tag)
-                    .Include(x => x.Creator)
-                    .ToList();
-
+                var events = context.Events.ToList();
                 return Ok(events);
 			}
 		}

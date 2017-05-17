@@ -1,1 +1,12 @@
-Det här är eventsidan
+﻿<article *ngFor="let event of events" class="eventContainer box block dataandnumbers">
+  <h3 class="headline">{{event.name}}</h3>
+  <div class="event-content">
+    <div class="eventImageContainer">
+      <img class="eventImage" src="/assets/img/IMG_0328.JPG" />
+    </div>
+    <div class="eventTextContainer">
+      <p>Startdatum: {{event.startTime}}</p>
+      <p>Startdatum: {{event.endTime}}</p>
+    </div>
+  </div>
+</article>
