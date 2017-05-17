@@ -17,8 +17,8 @@
       <span class="event-rating">{{event.goldStars}} <i class="icon-star icon-large" style="font-size: 30px" [ngClass]="{'activePoll' : event.showGold }" (click)="toggleGoldStar(event)"></i></span>
     </div>
     <div class="eventTextContainer">
-      <p>Start: {{event.startTime}}</p>
-      <p>Slut: {{event.endTime}}</p>
+      <p>Start: {{event.startTime | slice:0:10}} {{event.startTime | slice:11:16}}</p>
+      <p>Slut: {{event.endTime | slice:0:10}} {{event.endTime | slice:11:16}}</p>
       <p class="event-description">{{ event.description | slice:0:150 }} ...</p>
     </div>
   </div>
