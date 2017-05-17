@@ -17,6 +17,10 @@ export class EventService {
         return this.http.get(this.eventsUrl).map(this.extractData);
     }
 
+    getEventsByTagId(tagId: number): Observable<Event[]> {
+        return this.http.get(this.eventsUrl + '/tags/' + tagId).map(this.extractData);
+    }
+
     getEvent(id: number): Observable<Event> {
         return this.http.get(this.eventsUrl + '/' + id).map(this.extractData);
     }
