@@ -55,6 +55,16 @@ namespace Eventually.Api.Contollers {
             }
         }
 
+		[HttpGet]
+		[Route("{eventId}/participants")]
+		public async Task<IActionResult> GetEventParticipants(int eventId) {
+			using (var context = new EventuallyContext()) {
+				var eventParticipants = context.EventParticipants.Where(x => x.Event.Id == eventId);
+				var participants = eventParticipants.Select(x => x.User);
+				return Ok(participants.ToList());
+			}
+		}
+
 		[HttpDelete]
 		[Route("{id}")]
 		public async Task<IActionResult> DeleteById(int id) {

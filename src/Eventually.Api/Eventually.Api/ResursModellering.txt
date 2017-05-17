@@ -42,3 +42,5 @@ api/events/Tags/{id,id,id...}	-get all events by tag. (GET)
 
 api/tags						-get all events (POST)
 api/tags/{id}					-get event (PUT, DELETE, PATCH)
+
+api/events/{id}/participants
