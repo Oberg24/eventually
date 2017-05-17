@@ -7,7 +7,7 @@
     </span>
   </div>
   <img src="{{event.imageUrl}}" />
-  <p>Start: {{event.startTime}} | Slut: {{event.endTime}}</p>
+  <p>Start: {{event.startTime | slice:0:10}} {{event.startTime | slice:11:16}} | Slut: {{event.endTime | slice:0:10}} {{event.endTime | slice:11:16}}</p>
   <p class="event-description">{{ event.description }}</p>
   <div>
     <div *ngIf="participants.length > 0; else elseBlock">
