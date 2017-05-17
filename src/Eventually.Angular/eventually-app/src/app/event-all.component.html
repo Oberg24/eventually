@@ -1,4 +1,11 @@
-﻿<article *ngFor="let event of events" class="eventContainer box block dataandnumbers">
+﻿<div *ngIf="tags" style="margin-bottom: 10px">
+  <a (click)="getEvents()" class="btn wanted">Återställ filter</a>
+  <span *ngFor="let tag of tags">
+    <button (click)="getEventsWithTag(tag.id)" class="btn simple">{{tag.name}}</button>
+  </span>
+</div>
+
+<article *ngFor="let event of events" class="eventContainer box block dataandnumbers">
   <a [routerLink]="['/event', event.id]">
     <h3 class="headline">{{event.name}}</h3>
   </a>
@@ -13,10 +20,6 @@
       <p>Start: {{event.startTime}}</p>
       <p>Slut: {{event.endTime}}</p>
       <p class="event-description">{{ event.description | slice:0:150 }} ...</p>
-      <div *ngFor="let tag of tags">
-        <span class="label label-success">{{tag.name}}</span>
-      </div>
-     
     </div>
   </div>
 </article>

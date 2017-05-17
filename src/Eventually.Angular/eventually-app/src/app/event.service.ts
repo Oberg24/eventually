@@ -6,6 +6,7 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 
 import { Event } from './event';
+import { User } from './user';
 
 @Injectable()
 export class EventService {
@@ -15,6 +16,14 @@ export class EventService {
 
     getEvents(): Observable<Event[]> {
         return this.http.get(this.eventsUrl).map(this.extractData);
+    }
+
+    getEventParticipants(eventId: number): Observable<User[]> {
+        return this.http.get(this.eventsUrl + '/' + eventId + '/participants').map(this.extractData);
+    }
+
+    getEventsByTagId(tagId: number): Observable<Event[]> {
+        return this.http.get(this.eventsUrl + '/tags/' + tagId).map(this.extractData);
     }
 
     getEvent(id: number): Observable<Event> {

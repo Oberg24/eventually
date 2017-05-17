@@ -1,7 +1,7 @@
 ﻿<a routerLink="/events">Tillbaka till alla event</a>
 <div *ngIf="event">
   <h2>{{event.name}}</h2>
-  <div *ngIf="tags" style="margin-bottom: 10px">
+  <div *ngIf="tags.length > 0" style="margin-bottom: 10px">
     <span *ngFor="let tag of tags">
       <span class="label label-success">{{tag.name}}</span>
     </span>
@@ -9,4 +9,15 @@
   <img src="{{event.imageUrl}}" />
   <p>Start: {{event.startTime}} | Slut: {{event.endTime}}</p>
   <p class="event-description">{{ event.description }}</p>
+  <div>
+    <div *ngIf="participants.length > 0; else elseBlock">
+      <h3>Anmälda deltagare</h3>
+      <ul *ngFor="let participant of participants">
+        <li>{{participant.username}}</li>
+      </ul>
+    </div>
+    <ng-template #elseBlock>
+      <h3>Inga anmälda deltagare</h3>
+    </ng-template>
+  </div>
 </div>
